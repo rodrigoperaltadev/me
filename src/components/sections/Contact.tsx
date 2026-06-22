@@ -125,10 +125,10 @@ export function Contact() {
 
           <div className="mt-12 pt-12 border-t border-[var(--color-border-subtle)] flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="flex gap-6">
-              <a href="https://github.com/rodrigoperaltadev" className="text-text-secondary hover:text-accent transition-colors">
+              <a href="https://github.com/rodrigoperaltadev" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com/in/rodrigo-peralta-dev" className="text-text-secondary hover:text-accent transition-colors">
+              <a href="https://www.linkedin.com/in/rodrigo-alexis-peralta/" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
               <a href="mailto:rodrigoperalta.dev@gmail.com" className="text-text-secondary hover:text-accent transition-colors">

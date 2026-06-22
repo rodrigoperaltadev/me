@@ -11,10 +11,11 @@ export const dictionary = {
       tagline: "Building scalable mobile & web systems across fintech, banking, aviation — and now AI.",
       hireMe: "./EXECUTE_HIRE_CMD",
       viewRecords: "./VIEW_RECORDS",
+      downloadCV: "./DOWNLOAD_CV",
     },
     about: {
       title: "Peralta.init()",
-      p1: "Senior Developer with 5+ years delivering production-grade mobile and web applications. I specialize in the React ecosystem — from cross-platform mobile with React Native and Expo to performant web with Next.js — with a sharp focus on architecture, scalability, and developer experience.",
+      p1: "Senior Developer with 8+ years delivering production-grade mobile and web applications. I specialize in the React ecosystem — from cross-platform mobile with React Native and Expo to performant web with Next.js — with a sharp focus on architecture, scalability, and developer experience.",
       p2: "My work spans fintech wallets, banking apps, airline booking systems, and internal tooling for a video game company. More recently, I've been building AI-powered solutions: a RAG-based support assistant with Mistral AI and ChromaDB, and open-source tooling for the Pi AI coding assistant ecosystem. I care about Clean Architecture, Feature-Based design, and writing code that teams can maintain for years.",
       stats: {
         years: "Years_Exp",
@@ -29,7 +30,7 @@ export const dictionary = {
     },
     stack: {
       title: "Stack_Matrix",
-      tagline: "A comprehensive ledger of technical proficiencies developed over 5+ years of production-grade engineering.",
+      tagline: "A comprehensive ledger of technical proficiencies developed over 8+ years of production-grade engineering.",
     },
     contact: {
       title: "Let's_Work_Together",
@@ -59,10 +60,11 @@ export const dictionary = {
       tagline: "Sistemas móviles y web escalables para fintech, banca, aviación — y ahora IA.",
       hireMe: "./EJECUTAR_CONTRATACION",
       viewRecords: "./VER_REGISTROS",
+      downloadCV: "./DESCARGAR_CV",
     },
     about: {
       title: "Peralta.init()",
-      p1: "Desarrollador Senior con más de 5 años entregando aplicaciones móviles y web en producción. Me especializo en el ecosistema React — desde mobile cross-platform con React Native y Expo hasta web performante con Next.js — con foco en arquitectura, escalabilidad y experiencia del desarrollador.",
+      p1: "Desarrollador Senior con más de 8 años entregando aplicaciones móviles y web en producción. Me especializo en el ecosistema React — desde mobile cross-platform con React Native y Expo hasta web performante con Next.js — con foco en arquitectura, escalabilidad y experiencia del desarrollador.",
       p2: "Mi trabajo abarca wallets fintech, apps bancarias, sistemas de reserva de aerolíneas y herramientas internas para una empresa de videojuegos. Más recientemente, construí soluciones con IA: un asistente de soporte basado en RAG con Mistral AI y ChromaDB, y tooling open-source para el ecosistema de AI coding assistant Pi. Me importa la Clean Architecture, el diseño Feature-Based y escribir código que los equipos puedan mantener por años.",
       stats: {
         years: "Años_Exp",
@@ -77,7 +79,7 @@ export const dictionary = {
     },
     stack: {
       title: "Matriz_Stack",
-      tagline: "Un registro completo de competencias técnicas desarrolladas durante más de 5 años de ingeniería de grado de producción.",
+      tagline: "Un registro completo de competencias técnicas desarrolladas durante más de 8 años de ingeniería de grado de producción.",
     },
     contact: {
       title: "Trabajemos_Juntos",

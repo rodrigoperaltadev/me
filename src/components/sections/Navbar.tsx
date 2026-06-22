@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useApp } from "@/components/AppProvider";
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon, Download } from "lucide-react";
 
 export function Navbar() {
   const { toggleTheme, theme, lang, setLang, dict } = useApp();
@@ -21,9 +21,17 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-6">
-          <div className="hidden md:flex gap-6 text-sm font-mono text-text-secondary">
+          <div className="hidden md:flex gap-6 text-sm font-mono text-text-secondary items-center">
             <a href="#stack" className="hover:text-accent transition-colors">{dict.nav.stack}</a>
             <a href="#contact" className="hover:text-accent transition-colors">{dict.nav.contact}</a>
+            <a
+              href="/cv.pdf"
+              download="Rodrigo_Peralta_CV.pdf"
+              className="flex items-center gap-1.5 text-accent hover:text-text-primary border border-accent/40 hover:border-accent px-3 py-1 transition-colors"
+            >
+              <Download className="w-3 h-3" />
+              {dict.hero.downloadCV}
+            </a>
           </div>
           <div className="h-6 w-[1px] bg-[var(--color-border)] mx-2" />
           <div className="flex items-center gap-4 text-xs font-mono">

@@ -3,12 +3,13 @@
 import React from "react";
 import { useApp } from "@/components/AppProvider";
 import Image from "next/image";
+import { Download } from "lucide-react";
 
 export function About() {
   const { dict } = useApp();
 
   const stats = [
-    { label: dict.about.stats.years, value: "5+" },
+    { label: dict.about.stats.years, value: "8+" },
     { label: dict.about.stats.industries, value: "06" },
     { label: dict.about.stats.platforms, value: "∞" },
     { label: dict.about.stats.teams, value: "LEAD" },
@@ -25,7 +26,18 @@ export function About() {
             <p>{dict.about.p2}</p>
           </div>
 
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 items-end">
+          <div className="mt-10">
+            <a
+              href="/cv.pdf"
+              download="Rodrigo_Peralta_CV.pdf"
+              className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-text-secondary hover:text-accent border border-[var(--color-border)] hover:border-accent/50 px-5 py-3 transition-colors"
+            >
+              <Download className="w-3.5 h-3.5" />
+              {dict.hero.downloadCV}
+            </a>
+          </div>
+
+          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 items-end">
             {stats.map((stat, idx) => (
               <div key={idx} className="space-y-1 group">
                 <div className="text-4xl md:text-6xl font-heading font-bold text-accent group-hover:scale-105 transition-transform origin-bottom-left glow-cyan">
