@@ -15,7 +15,7 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="py-32 px-6 relative overflow-hidden border-t border-white/5">
+    <section id="about" className="py-32 px-6 relative overflow-hidden border-t border-[var(--color-border-subtle)]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div className="reveal order-2 lg:order-1">
           <span className="font-mono text-accent mb-4 block uppercase tracking-[0.3em] text-xs font-bold">{"// 01_PROFILE"}</span>
@@ -31,7 +31,7 @@ export function About() {
                 <div className="text-4xl md:text-6xl font-heading font-bold text-accent group-hover:scale-105 transition-transform origin-bottom-left glow-cyan">
                   {stat.value}
                 </div>
-                <div className="font-mono text-[10px] uppercase tracking-widest text-white/40">
+                <div className="font-mono text-[10px] uppercase tracking-widest text-[var(--color-muted)]">
                   {stat.label}
                 </div>
               </div>
@@ -41,12 +41,12 @@ export function About() {
 
         <div className="reveal flex justify-center order-1 lg:order-2">
           <div className="relative group">
-            <div className="w-72 h-72 md:w-96 md:h-96 p-4 flex items-center justify-center relative">
-              <div className="absolute inset-0 border-2 border-accent translate-x-4 translate-y-4" />
-              <div className="absolute inset-0 border-2 border-white/10" />
-              <div className="w-full h-full bg-surface overflow-hidden relative z-10 border border-white/10">
+            <div className="w-full max-w-[280px] aspect-square md:w-96 md:h-96 p-4 flex items-center justify-center relative">
+              <div className="absolute inset-0 border-2 border-accent translate-x-2 translate-y-2 md:translate-x-4 md:translate-y-4" />
+              <div className="absolute inset-0 border-2 border-[var(--color-border)]" />
+              <div className="w-full h-full bg-surface overflow-hidden relative z-10 border border-[var(--color-border)]">
                 <Image
-                  src="https://i.pravatar.cc/800?u=rodrigo-peralta"
+                  src="/profile.jpeg"
                   alt="Rodrigo Peralta"
                   width={800}
                   height={800}

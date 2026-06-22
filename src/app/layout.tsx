@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { AppProvider } from "@/components/AppProvider";
+import { ViewTransitions } from "next-view-transitions";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -32,10 +33,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="view-transition" content="same-origin" />
+      </head>
       <body
         className={`${spaceGrotesk.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable} antialiased`}
       >
-        <AppProvider>{children}</AppProvider>
+        <ViewTransitions>
+          <AppProvider>{children}</AppProvider>
+        </ViewTransitions>
       </body>
     </html>
   );

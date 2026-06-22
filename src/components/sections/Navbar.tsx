@@ -8,7 +8,7 @@ export function Navbar() {
   const { toggleTheme, theme, lang, setLang, dict } = useApp();
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/5">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-[var(--color-border-subtle)]">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-8">
           <a href="#" className="font-heading font-bold text-2xl tracking-tighter group">
@@ -25,7 +25,7 @@ export function Navbar() {
             <a href="#stack" className="hover:text-accent transition-colors">{dict.nav.stack}</a>
             <a href="#contact" className="hover:text-accent transition-colors">{dict.nav.contact}</a>
           </div>
-          <div className="h-6 w-[1px] bg-white/10 mx-2" />
+          <div className="h-6 w-[1px] bg-[var(--color-border)] mx-2" />
           <div className="flex items-center gap-4 text-xs font-mono">
             <button
               onClick={() => setLang("en")}
@@ -33,7 +33,7 @@ export function Navbar() {
             >
               EN
             </button>
-            <span className="text-white/20">|</span>
+            <span className="text-[var(--color-muted)]">|</span>
             <button
               onClick={() => setLang("es")}
               className={lang === "es" ? "text-accent" : "text-text-secondary hover:text-accent"}
@@ -43,7 +43,7 @@ export function Navbar() {
           </div>
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-full border border-white/10 hover:border-accent/50 transition-colors"
+            className="p-2 rounded-full border border-[var(--color-border)] hover:border-accent/50 transition-colors"
           >
             {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </button>

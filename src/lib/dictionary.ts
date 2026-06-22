@@ -8,19 +8,19 @@ export const dictionary = {
     },
     hero: {
       subtitle: "Senior React & React Native Engineer",
-      tagline: "Engineering high-fidelity digital systems for fintech, banking, and aviation.",
+      tagline: "Building scalable mobile & web systems across fintech, banking, aviation — and now AI.",
       hireMe: "./EXECUTE_HIRE_CMD",
       viewRecords: "./VIEW_RECORDS",
     },
     about: {
       title: "Peralta.init()",
-      p1: "I'm a solution-oriented Senior Developer with over 5 years of experience in the tech industry. I thrive at the intersection of complex problem solving and elegant user interface design.",
-      p2: "My journey has spanned across industries from high-stakes fintech and banking to fast-paced gaming and aviation. I specialize in building robust mobile and web applications using the React ecosystem.",
+      p1: "Senior Developer with 5+ years delivering production-grade mobile and web applications. I specialize in the React ecosystem — from cross-platform mobile with React Native and Expo to performant web with Next.js — with a sharp focus on architecture, scalability, and developer experience.",
+      p2: "My work spans fintech wallets, banking apps, airline booking systems, and internal tooling for a video game company. More recently, I've been building AI-powered solutions: a RAG-based support assistant with Mistral AI and ChromaDB, and open-source tooling for the Pi AI coding assistant ecosystem. I care about Clean Architecture, Feature-Based design, and writing code that teams can maintain for years.",
       stats: {
         years: "Years_Exp",
         industries: "Industries",
         platforms: "Platforms",
-        teams: "Teams",
+        teams: "Teams_Led",
       },
     },
     experience: {
@@ -56,19 +56,19 @@ export const dictionary = {
     },
     hero: {
       subtitle: "Senior React & React Native Engineer",
-      tagline: "Ingeniería de sistemas digitales de alta fidelidad para fintech, banca y aviación.",
+      tagline: "Sistemas móviles y web escalables para fintech, banca, aviación — y ahora IA.",
       hireMe: "./EJECUTAR_CONTRATACION",
       viewRecords: "./VER_REGISTROS",
     },
     about: {
       title: "Peralta.init()",
-      p1: "Soy un Desarrollador Senior orientado a soluciones con más de 5 años de experiencia en la industria tecnológica. Me destaco en la intersección de la resolución de problemas complejos y el diseño de interfaces de usuario elegantes.",
-      p2: "Mi trayectoria abarca industrias que van desde fintech y banca de alto riesgo hasta gaming y aviación de ritmo acelerado. Me especializo en la construcción de aplicaciones móviles y web robustas utilizando el ecosistema React.",
+      p1: "Desarrollador Senior con más de 5 años entregando aplicaciones móviles y web en producción. Me especializo en el ecosistema React — desde mobile cross-platform con React Native y Expo hasta web performante con Next.js — con foco en arquitectura, escalabilidad y experiencia del desarrollador.",
+      p2: "Mi trabajo abarca wallets fintech, apps bancarias, sistemas de reserva de aerolíneas y herramientas internas para una empresa de videojuegos. Más recientemente, construí soluciones con IA: un asistente de soporte basado en RAG con Mistral AI y ChromaDB, y tooling open-source para el ecosistema de AI coding assistant Pi. Me importa la Clean Architecture, el diseño Feature-Based y escribir código que los equipos puedan mantener por años.",
       stats: {
         years: "Años_Exp",
         industries: "Industrias",
         platforms: "Plataformas",
-        teams: "Equipos",
+        teams: "Equipos_Liderados",
       },
     },
     experience: {
@@ -81,7 +81,7 @@ export const dictionary = {
     },
     contact: {
       title: "Trabajemos_Juntos",
-      tagline: "¿Tienes un proyecto en mente o quieres contratarme? Mi bandeja de entrada siempre está abierta para oportunidades de alto impacto.",
+      tagline: "¿Tenés un proyecto en mente o querés explorar una colaboración? Siempre estoy abierto a oportunidades de alto impacto.",
       form: {
         name: "Visitante.nombre",
         email: "Visitante.email",
