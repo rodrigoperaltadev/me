@@ -54,7 +54,7 @@ export default function Image() {
         {/* Center — main content */}
         <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
           <div style={{ color: "#00FFFF", fontSize: 14, letterSpacing: "0.25em" }}>
-            // SENIOR_ENGINEER
+            {"// SENIOR_ENGINEER"}
           </div>
           <div
             style={{

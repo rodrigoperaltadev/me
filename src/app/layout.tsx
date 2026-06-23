@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { AppProvider } from "@/components/AppProvider";
 import { ViewTransitions } from "next-view-transitions";
+import { SITE_URL } from "@/lib/site";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -21,10 +22,8 @@ const ibmPlexMono = IBM_Plex_Mono({
   variable: "--font-mono",
 });
 
-const BASE_URL = "https://rodrigoperalta.ar";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(BASE_URL),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Rodrigo Peralta | Senior React & React Native Engineer",
     template: "%s | Rodrigo Peralta",
@@ -44,12 +43,11 @@ export const metadata: Metadata = {
     "Rodrigo Peralta",
     "portfolio",
   ],
-  authors: [{ name: "Rodrigo Peralta", url: BASE_URL }],
+  authors: [{ name: "Rodrigo Peralta", url: SITE_URL }],
   creator: "Rodrigo Peralta",
-  canonical: BASE_URL,
   openGraph: {
     type: "website",
-    url: BASE_URL,
+    url: SITE_URL,
     siteName: "Rodrigo Peralta",
     title: "Rodrigo Peralta | Senior React & React Native Engineer",
     description:
@@ -74,8 +72,15 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: BASE_URL,
+    canonical: SITE_URL,
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#F4F0EC" },
+    { media: "(prefers-color-scheme: dark)", color: "#111111" },
+  ],
 };
 
 export default function RootLayout({
