@@ -133,6 +133,9 @@ export function Hero() {
                 <BrutalistButton variant="secondary" onClick={() => document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" })}>
                   {dict.hero.viewRecords}
                 </BrutalistButton>
+                <BrutalistButton variant="secondary" onClick={() => window.open("/cv", "_blank", "noopener,noreferrer")}>
+                  {dict.hero.downloadCV}
+                </BrutalistButton>
               </div>
             </div>
 
