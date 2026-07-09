@@ -1,0 +1,9 @@
+version: 1
+backend: local
+flow:
+  template: dev
+  states: [backlog, todo, in-progress, in-review, done, blocked, dropped]
+  terminal: [done, dropped]
+id:
+  prefix: BL
+  next: 13
