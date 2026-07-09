@@ -1,0 +1,330 @@
+/* ============================================================
+   CV page — screen (brand: dark/terminal) + print (A4 clean)
+   Single source of truth: src/lib/experienceData.ts
+   ============================================================ */
+
+.cv-root {
+  min-height: 100vh;
+  background: var(--color-background);
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+}
+
+/* A4 sheet: 210mm x 297mm. On screen we cap width for readability. */
+.cv-sheet {
+  width: 210mm;
+  max-width: 100%;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 22mm 20mm;
+  box-sizing: border-box;
+}
+
+/* ---------- Header ---------- */
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+}
+
+.cv-name {
+  font-family: var(--font-heading);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.cv-role {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-accent);
+  margin-top: 6px;
+  letter-spacing: 0.02em;
+}
+
+.cv-contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+.cv-contact li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7px;
+}
+
+.cv-contact-icon {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  order: 2; /* icon sits to the right of the text on the right-aligned column */
+}
+
+.cv-contact a,
+.cv-contact li > span:not(.cv-contact-icon) {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  order: 1;
+}
+
+/* ---------- Sections ---------- */
+.cv-section {
+  margin-bottom: 16px;
+}
+
+.cv-section-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-accent);
+  margin-bottom: 9px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cv-summary {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+/* ---------- Tags / Badges (reused: Core Skills + experience stack) ---------- */
+.cv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.cv-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  line-height: 1;
+  padding: 3px 7px;
+  border-radius: 4px;
+  color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 35%, transparent);
+  white-space: nowrap;
+}
+
+/* ---------- Skills ---------- */
+.cv-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cv-skill-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.cv-skill-label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-secondary);
+  padding-top: 3px;
+}
+
+/* ---------- Experience ---------- */
+.cv-timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-entry {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  padding: 11px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.cv-entry:first-child {
+  padding-top: 3px;
+  border-top: none;
+}
+
+.cv-entry:last-child {
+  padding-bottom: 0;
+}
+
+.cv-entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.cv-entry-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-company {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.cv-role-line {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-top: 1px;
+}
+
+.cv-entry-meta {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.cv-year {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-accent);
+}
+
+.cv-industry {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  color: var(--color-muted);
+  margin-top: 1px;
+}
+
+.cv-points {
+  margin: 7px 0 9px;
+  padding-left: 16px;
+}
+
+.cv-points li {
+  font-size: 11.5px;
+  line-height: 1.45;
+  margin-bottom: 2px;
+  color: var(--color-text-primary);
+}
+
+/* ---------- Footer (once, at the end) ---------- */
+.cv-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  color: var(--color-muted);
+}
+
+/* ============================================================
+   PRINT: force a clean, ink-friendly A4 document.
+   Recruiters print this — never dump a full black page on them.
+   Pages 2+ get top breathing room from the @page margin (no repeated header).
+   ============================================================ */
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm 0;
+  }
+
+  html,
+  body {
+    background: #ffffff;
+  }
+
+  .cv-print-hide {
+    display: none !important;
+  }
+
+  .cv-root {
+    padding: 0;
+    background: #ffffff;
+    color: #111111;
+    display: block;
+  }
+
+  .cv-sheet {
+    width: 100%;
+    max-width: none;
+    border: none;
+    background: #ffffff;
+    color: #111111;
+    padding: 0 18mm;
+  }
+
+  .cv-header {
+    border-bottom-color: #111111;
+  }
+
+  /* Recolor brand tokens to print-safe values */
+  .cv-role,
+  .cv-year,
+  .cv-section-title {
+    color: #0a6b6b; /* dark teal — visible on paper, not neon */
+  }
+  .cv-name,
+  .cv-company,
+  .cv-summary,
+  .cv-points li {
+    color: #111111;
+  }
+  .cv-role-line,
+  .cv-skill-label,
+  .cv-contact,
+  .cv-contact a,
+  .cv-contact li > span:not(.cv-contact-icon) {
+    color: #444444;
+  }
+  .cv-contact-icon {
+    color: #0a6b6b;
+  }
+  .cv-industry,
+  .cv-footer {
+    color: #777777;
+  }
+  .cv-section-title,
+  .cv-footer,
+  .cv-entry {
+    border-color: #dddddd;
+  }
+
+  /* Tags in print: outlined teal, no fill — ink-friendly and crisp */
+  .cv-tag {
+    color: #0a6b6b;
+    background: transparent;
+    border: 1px solid #9ecccc;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* Ensure colors actually render in print */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
