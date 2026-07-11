@@ -1,0 +1,25 @@
+{
+  "year": "2024 — 2025",
+  "company": "Alten",
+  "industry": "IT Consulting · Freelance",
+  "role": "Senior Fullstack Developer",
+  "active": true,
+  "points": [
+    "Built a RAG-powered support assistant for NAVANTIA (SAP ARIBA) using Python/FastAPI, Mistral AI, ChromaDB and React — with real-time streaming chat, an intelligent email agent with auto-response, and an interactive semantic knowledge map built with UMAP + DBSCAN.",
+    "Developed a contract management platform for Airbus Defence and Space using Vue 3, GraphQL (Mercurius/Apollo), Node.js/Fastify and PostgreSQL — covering Liquidated Damages calculations, price escalation formulas indexed to economic indicators, and automated document generation (Word/Excel/PDF).",
+    "Built a project planning SPA for a German engineering client with an interactive Gantt chart, milestone tracking, KPI dashboards with Excel exports, and a granular 4-role permission system."
+  ],
+  "stack": [
+    "React",
+    "Vue 3",
+    "TypeScript",
+    "Python",
+    "FastAPI",
+    "GraphQL",
+    "Mistral AI",
+    "ChromaDB",
+    "RAG",
+    "Node.js"
+  ],
+  "id": "000_ALT"
+}

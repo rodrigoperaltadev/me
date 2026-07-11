@@ -1,4 +1,4 @@
-import { getExperienceData } from "@/lib/experienceDataEs";
+import { getExperienceData } from "@/lib/content/loaders";
 import {
   CV_CONTACT,
   CV_STRINGS,
@@ -33,10 +33,12 @@ function Tags({ items }: { items: string[] }) {
  * Rendered by /cv (en) and /cv/es (es). Single component, single CSS —
  * keeps both languages structurally identical and in sync.
  */
-export function CVDocument({ lang }: { lang: CvLang }) {
+export async function CVDocument({ lang }: { lang: CvLang }) {
   const s = CV_STRINGS[lang];
-  const experience = getExperienceData(lang);
-  const skillGroups = getSkillGroups(lang);
+  const [experience, skillGroups] = await Promise.all([
+    getExperienceData(lang),
+    getSkillGroups(lang),
+  ]);
 
   const contactItems = [
     { icon: <MailIcon />, label: CV_CONTACT.email, href: `mailto:${CV_CONTACT.email}` },

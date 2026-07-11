@@ -1,0 +1,24 @@
+{
+  "year": "2025 — PRES",
+  "company": "Valtech",
+  "industry": "IT Services",
+  "role": "Senior React & React Native Developer",
+  "active": true,
+  "points": [
+    "Leading frontend development across multiple simultaneous client projects — including a React Native post-booking self-service app for Aerolíneas Argentinas, two Flutter apps for Berel (Mexican paint brand), a React Native superapp for Siman (Central American retail), and a React Native e-commerce app with a Fastify BFF for Unisuper/La Torre (Guatemala).",
+    "Driving technical health initiatives: incremental dead code cleanup, Redux modernization, and improved test coverage using react-doctor and Knip to measure and reduce unused exports.",
+    "Establishing architecture standards across teams: feature-based architecture, BFF patterns, XState for complex flows, and TanStack Query for server state management."
+  ],
+  "stack": [
+    "React Native",
+    "Flutter",
+    "TypeScript",
+    "Expo",
+    "Redux",
+    "XState",
+    "TanStack Query",
+    "Fastify",
+    "Jest"
+  ],
+  "id": "000_VAL2"
+}

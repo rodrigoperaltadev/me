@@ -1,0 +1,21 @@
+{
+  "year": "2022 — 2023",
+  "company": "Valtech",
+  "industry": "IT Services",
+  "role": "Senior React & React Native Developer",
+  "points": [
+    "Led the frontend web team for Aerolíneas Argentinas, delivering high-quality flight booking and management solutions.",
+    "Developed and maintained AR-PLUS, the airline's loyalty and rewards program — a critical feature used by millions of passengers.",
+    "Drove adoption of Clean Architecture and component-driven patterns across the engineering team."
+  ],
+  "stack": [
+    "React.js",
+    "Flutter",
+    "TypeScript",
+    "Redux",
+    "Jest",
+    "Clean Architecture",
+    "CI/CD"
+  ],
+  "id": "003_VAL"
+}

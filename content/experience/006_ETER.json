@@ -1,0 +1,19 @@
+{
+  "year": "2018 — 2021",
+  "company": "Etermax",
+  "industry": "Video Games",
+  "role": "Software Development Engineer",
+  "points": [
+    "Developed and maintained frontend and backend components for internal tooling, streamlining processes across the engineering org.",
+    "First professional role — built a strong foundation in full-stack development, testing practices, and production systems."
+  ],
+  "stack": [
+    "JavaScript",
+    "Redux",
+    "Jest",
+    "CSS Flexbox",
+    "CI/CD",
+    "Babel.js"
+  ],
+  "id": "006_ETER"
+}

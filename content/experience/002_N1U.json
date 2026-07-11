@@ -1,0 +1,22 @@
+{
+  "year": "2023 — 2024",
+  "company": "n1u",
+  "industry": "Fintech · Freelance",
+  "role": "Senior React & React Native Developer",
+  "points": [
+    "Led development of the N1u fintech wallet app using React Native + Expo, crafting a dynamic and accessible cross-platform UI.",
+    "Designed and built the Backend-for-Frontend (BFF) layer with NestJS, acting as the intermediary between mobile frontend and backend services.",
+    "Implemented CI/CD pipelines, React Query for data fetching, and Jest for unit testing — ensuring reliability at scale."
+  ],
+  "stack": [
+    "React Native",
+    "Expo",
+    "NestJS",
+    "BFF",
+    "React Query",
+    "Jest",
+    "Zustand",
+    "CI/CD"
+  ],
+  "id": "002_N1U"
+}

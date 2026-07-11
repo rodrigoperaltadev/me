@@ -9,8 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.4.0",
     "@tailwindcss/postcss": "^4.3.1",
     "clsx": "^2.1.1",
+    "gray-matter": "^4.0.3",
     "gsap": "^3.15.0",
     "lenis": "^1.3.23",
     "lucide-react": "^0.460.0",
@@ -20,9 +22,11 @@
     "postcss": "^8.5.15",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "react-hook-form": "^7.81.0",
     "resend": "^6.14.0",
     "tailwind-merge": "^3.6.0",
-    "tailwindcss": "^4.3.1"
+    "tailwindcss": "^4.3.1",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

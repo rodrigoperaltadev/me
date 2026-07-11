@@ -1,0 +1,19 @@
+{
+  "year": "2021 — 2022",
+  "company": "Plannifai",
+  "industry": "SaaS · Shift Software",
+  "role": "Frontend Developer",
+  "points": [
+    "Built and maintained the web administration module with Vue.js for employee shift scheduling across multiple industries.",
+    "Contributed to the React Native mobile app, giving users on-the-go access to shift management features."
+  ],
+  "stack": [
+    "Vue.js",
+    "React Native",
+    "TypeScript",
+    "Redux",
+    "Jest",
+    "CI/CD"
+  ],
+  "id": "004_PLAN"
+}

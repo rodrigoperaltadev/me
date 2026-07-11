@@ -3,9 +3,13 @@
 import React from "react";
 import { Link } from "next-view-transitions";
 import { useApp } from "@/components/AppProvider";
-import { experienceData, idToSlug } from "@/lib/experienceData";
+import { idToSlug, type ExperienceEntry } from "@/lib/content/types";
 
-export function Experience() {
+interface ExperienceProps {
+  experiences: ExperienceEntry[];
+}
+
+export function Experience({ experiences }: ExperienceProps) {
   const { dict } = useApp();
 
   return (
@@ -22,9 +26,9 @@ export function Experience() {
         </div>
 
         <div className="space-y-0">
-          {experienceData.map((exp, idx) => (
+          {experiences.map((exp) => (
             <Link
-              key={idx}
+              key={exp.id}
               href={`/experience/${idToSlug(exp.id)}`}
               className="reveal grid grid-cols-1 md:grid-cols-12 py-8 md:py-12 border-b border-[var(--color-border-subtle)] hover:bg-[var(--color-border-subtle)] group transition-all cursor-pointer block"
             >

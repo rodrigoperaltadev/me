@@ -1,0 +1,8 @@
+{
+  "role": "Senior React & React Native Developer",
+  "points": [
+    "Lideré el desarrollo de la app de la wallet fintech N1u usando React Native + Expo, construyendo una UI cross-platform dinámica y accesible.",
+    "Diseñé y construí la capa Backend-for-Frontend (BFF) con NestJS, actuando como intermediario entre el frontend móvil y los servicios de backend.",
+    "Implementé pipelines de CI/CD, React Query para data fetching y Jest para tests unitarios — asegurando confiabilidad a escala."
+  ]
+}

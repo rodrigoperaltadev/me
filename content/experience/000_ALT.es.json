@@ -1,0 +1,8 @@
+{
+  "role": "Senior Fullstack Developer",
+  "points": [
+    "Construí un asistente de soporte basado en RAG para NAVANTIA (SAP ARIBA) usando Python/FastAPI, Mistral AI, ChromaDB y React — con chat en streaming en tiempo real, un agente de email inteligente con auto-respuesta y un mapa de conocimiento semántico interactivo construido con UMAP + DBSCAN.",
+    "Desarrollé una plataforma de gestión de contratos para Airbus Defence and Space usando Vue 3, GraphQL (Mercurius/Apollo), Node.js/Fastify y PostgreSQL — cubriendo cálculos de Liquidated Damages, fórmulas de escalación de precios indexadas a indicadores económicos y generación automática de documentos (Word/Excel/PDF).",
+    "Construí una SPA de planificación de proyectos para un cliente de ingeniería alemán, con un diagrama de Gantt interactivo, seguimiento de hitos, dashboards de KPIs con exportación a Excel y un sistema de permisos granular de 4 roles."
+  ]
+}

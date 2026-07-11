@@ -1,4 +1,4 @@
-import { experienceData } from "./experienceData";
+import { getCoreSkills } from "./content/loaders";
 
 export type CvLang = "en" | "es";
 
@@ -93,13 +93,17 @@ const SKILL_GROUPS: {
   },
 ];
 
-// Skills the person actually has, derived from the single source of truth.
-const CORE_SKILLS = new Set(experienceData.flatMap((e) => e.stack));
+// Skills the person actually has — derived from the single source of truth at runtime.
+async function getCoreSkillsSet(): Promise<Set<string>> {
+  const skills = await getCoreSkills();
+  return new Set(skills);
+}
 
 /** Returns localized skill groups, filtered to real skills only. */
-export function getSkillGroups(lang: CvLang) {
+export async function getSkillGroups(lang: CvLang) {
+  const coreSkills = await getCoreSkillsSet();
   return SKILL_GROUPS.map((g) => ({
     label: g.label[lang],
-    items: g.items.filter((s) => CORE_SKILLS.has(s)),
+    items: g.items.filter((s) => coreSkills.has(s)),
   })).filter((g) => g.items.length > 0);
 }

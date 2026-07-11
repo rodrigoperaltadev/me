@@ -1,0 +1,17 @@
+{
+  "year": "2021 — 2021",
+  "company": "Banco del Sol",
+  "industry": "Banking",
+  "role": "Software Development Engineer",
+  "points": [
+    "Developed the bank's Virtual Branch mobile application using React Native, ensuring high-quality features and a seamless customer experience.",
+    "Collaborated closely with designers to produce an accessible, pixel-perfect UI aligned with banking UX standards."
+  ],
+  "stack": [
+    "React Native",
+    "TypeScript",
+    "Jest",
+    "CI/CD"
+  ],
+  "id": "005_BDS"
+}

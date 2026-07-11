@@ -1,0 +1,8 @@
+{
+  "role": "Senior React & React Native Developer",
+  "points": [
+    "Lidero el desarrollo frontend en múltiples proyectos de clientes en simultáneo, incluyendo una app self-service de post-booking en React Native para Aerolíneas Argentinas, dos apps en Flutter para Berel (marca mexicana de pinturas), una superapp en React Native para Siman (retail centroamericano) y una app de e-commerce en React Native con BFF en Fastify para Unisuper/La Torre (Guatemala).",
+    "Impulso iniciativas de salud técnica: limpieza incremental de código muerto, modernización de Redux y mejora de cobertura de tests usando react-doctor y Knip para medir y reducir exports sin uso.",
+    "Establezco estándares de arquitectura entre equipos: arquitectura basada en features, patrones BFF, XState para flujos complejos y TanStack Query para el manejo de estado del servidor."
+  ]
+}

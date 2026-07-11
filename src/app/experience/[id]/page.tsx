@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "next-view-transitions";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
-import { slugToEntry } from "@/lib/experienceData";
+import { getExperienceData, getExperienceEntry, idToSlug } from "@/lib/content/loaders";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -10,7 +10,7 @@ interface PageProps {
 
 export default async function ExperienceDetailPage({ params }: PageProps) {
   const { id } = await params;
-  const exp = slugToEntry(id);
+  const exp = await getExperienceEntry(id, "en");
 
   if (!exp) {
     notFound();
@@ -126,6 +126,6 @@ export default async function ExperienceDetailPage({ params }: PageProps) {
 }
 
 export async function generateStaticParams() {
-  const { experienceData, idToSlug } = await import("@/lib/experienceData");
-  return experienceData.map((exp) => ({ id: idToSlug(exp.id) }));
+  const experience = await getExperienceData("en");
+  return experience.map((exp) => ({ id: idToSlug(exp.id) }));
 }

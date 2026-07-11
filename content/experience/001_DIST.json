@@ -1,0 +1,19 @@
+{
+  "year": "2023 — 2025",
+  "company": "Distillery",
+  "industry": "IT Services",
+  "role": "Senior React & React Native Developer",
+  "points": [
+    "Developed Rabbit's mobile app with React Native + TypeScript, delivering a seamless shopping, payment and recharge experience.",
+    "Contributed to the backoffice platform using Next.js, improving administrative capabilities and operational efficiency.",
+    "Applied Feature-Based architecture and MVVM patterns across all projects for long-term maintainability."
+  ],
+  "stack": [
+    "React Native",
+    "TypeScript",
+    "Next.js",
+    "MVVM",
+    "Agile"
+  ],
+  "id": "001_DIST"
+}
