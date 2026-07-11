@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { useApp } from "@/components/AppProvider";
 import { Sun, Moon, Download } from "lucide-react";
 
@@ -17,13 +18,14 @@ export function Navbar() {
           <div className="hidden md:flex gap-6 text-sm font-mono text-text-secondary">
             <a href="#about" className="hover:text-accent transition-colors">{dict.nav.about}</a>
             <a href="#experience" className="hover:text-accent transition-colors">{dict.nav.experience}</a>
+            <a href="#stack" className="hover:text-accent transition-colors">{dict.nav.stack}</a>
+            <a href="#contact" className="hover:text-accent transition-colors">{dict.nav.contact}</a>
           </div>
         </div>
 
         <div className="flex items-center gap-6">
           <div className="hidden md:flex gap-6 text-sm font-mono text-text-secondary items-center">
-            <a href="#stack" className="hover:text-accent transition-colors">{dict.nav.stack}</a>
-            <a href="#contact" className="hover:text-accent transition-colors">{dict.nav.contact}</a>
+            <Link href="/blog" className="hover:text-accent transition-colors">./blog</Link>
             <a
               href="/cv.pdf"
               download="Rodrigo_Peralta_CV.pdf"
