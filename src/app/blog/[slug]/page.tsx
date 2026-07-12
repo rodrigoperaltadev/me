@@ -4,6 +4,7 @@ import { getBlogPostBySlug } from "@/lib/blog";
 import { notFound } from "next/navigation";
 import { ChevronLeft, Calendar, Tag, Clock, ArrowLeft } from "lucide-react";
 import { TerminalWindow } from "@/components/ui/TerminalWindow";
+import ReactMarkdown from "react-markdown";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -61,20 +62,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <div className="absolute -left-12 top-0 bottom-0 w-1 bg-accent/10 hidden lg:block"></div>
           
           <TerminalWindow className="relative mb-16">
-            <div className="max-w-none font-sans text-lg leading-relaxed opacity-90 lg:px-4">
-               {/* Simple MDX-like rendering logic */}
-               {post.body.split('\n').map((line, i) => {
-                 if (line.startsWith('# ')) {
-                   return <h1 key={i} className="font-heading font-bold text-4xl uppercase tracking-tighter mt-12 mb-8 text-text-primary border-l-4 border-accent pl-6">{line.substring(2)}</h1>;
-                 }
-                 if (line.startsWith('## ')) {
-                   return <h2 key={i} className="font-heading font-bold text-3xl uppercase tracking-tighter mt-10 mb-6 text-text-primary/90 flex items-center gap-3">
-                     <span className="text-accent/40">{"//"}</span> {line.substring(3)}
-                   </h2>;
-                 }
-                 if (line.trim() === "") return <br key={i} />;
-                 return <p key={i} className="mb-8 font-mono text-[15px] tracking-wide leading-relaxed text-text-primary/90">{line}</p>;
-               })}
+            <div className="prose prose-invert prose-lg max-w-none lg:px-4 prose-headings:font-heading prose-headings:uppercase prose-headings:tracking-tighter prose-h1:text-4xl prose-h1:border-l-4 prose-h1:border-accent prose-h1:pl-6 prose-h2:text-3xl prose-h2:text-text-primary/90 prose-p:font-mono prose-p:text-[15px] prose-p:tracking-wide prose-p:text-text-primary/90 prose-strong:text-accent prose-strong:font-bold prose-a:text-accent prose-a:no-underline hover:prose-a:underline prose-li:text-text-primary/90 prose-li:font-mono prose-blockquote:border-l-4 prose-blockquote:border-accent prose-blockquote:text-text-primary/90 prose-blockquote:italic prose-code:text-accent prose-code:bg-black/30 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-black/50 prose-pre:border prose-pre:border-white/10 prose-hr:border-white/20">
+              <ReactMarkdown>{post.body}</ReactMarkdown>
             </div>
           </TerminalWindow>
 

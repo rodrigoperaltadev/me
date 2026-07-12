@@ -23,6 +23,7 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-hook-form": "^7.81.0",
+    "react-markdown": "^10.1.0",
     "resend": "^6.14.0",
     "tailwind-merge": "^3.6.0",
     "tailwindcss": "^4.3.1",
