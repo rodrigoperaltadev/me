@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { getSession } from "@/lib/admin/auth";
 import { writeExperience, experienceExists } from "@/lib/content/writers";
 import { ExperienceFileSchema } from "@/lib/content/schemas";
+import { regenAfterExperienceChange } from "@/lib/content/regen";
 
 export async function POST(request: Request) {
   const session = await getSession();
@@ -19,6 +20,7 @@ export async function POST(request: Request) {
       );
     }
     await writeExperience(parsed);
+    regenAfterExperienceChange().catch(() => {});
     return NextResponse.json({ ok: true, id: parsed.id });
   } catch (err: unknown) {
     if (err instanceof Error && "issues" in err) {

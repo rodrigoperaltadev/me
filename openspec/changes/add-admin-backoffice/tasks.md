@@ -78,12 +78,12 @@ Chain strategy: stacked-to-main
 - [x] 4.12 Create `src/components/blog/BlogCard.tsx` (public card)
 - [x] 4.13 Update sitemap to include blog posts
 
-## Phase 5: CV Regeneration (PENDING — Work Unit 3)
+## Phase 5: CV Regeneration (COMPLETED — Work Unit 3)
 
-- [ ] 5.1 Create `scripts/regen-cv.ts` for PDF export
-- [ ] 5.2 Create `src/lib/content/regen.ts` orchestrator
-- [ ] 5.3 Wire regen into experience mutations
-- [ ] 5.4 Update `CV.md` on experience save
+- [x] 5.1 Create `scripts/regen-cv.ts` for PDF export
+- [x] 5.2 Create `src/lib/content/regen.ts` orchestrator
+- [x] 5.3 Wire regen into experience mutations
+- [x] 5.4 Update `CV.md` on experience save
 
 ## Phase 6: Manual Verification (PENDING)
 

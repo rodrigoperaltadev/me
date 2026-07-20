@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { getSession } from "@/lib/admin/auth";
 import { writeExperience, writeExperienceEs, deleteExperience } from "@/lib/content/writers";
 import { ExperienceFileSchema, ExperienceEsOverlaySchema } from "@/lib/content/schemas";
+import { regenAfterExperienceChange } from "@/lib/content/regen";
 
 export async function PUT(
   request: Request,
@@ -21,6 +22,7 @@ export async function PUT(
       const overlayParsed = ExperienceEsOverlaySchema.parse(esOverlay);
       await writeExperienceEs(id, overlayParsed);
     }
+    regenAfterExperienceChange().catch(() => {});
     return NextResponse.json({ ok: true });
   } catch (err: unknown) {
     if (err instanceof Error && "issues" in err) {
@@ -44,6 +46,7 @@ export async function DELETE(
   try {
     const { id } = await params;
     await deleteExperience(id);
+    regenAfterExperienceChange().catch(() => {});
     return NextResponse.json({ ok: true });
   } catch (err: unknown) {
     if (err instanceof Error && err.message?.includes("ADMIN_WRITES_DISABLED")) {

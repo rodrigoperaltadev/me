@@ -7,7 +7,8 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "backlog": "node scripts/backlog.js"
+    "backlog": "node scripts/backlog.js",
+    "regen:cv": "tsx scripts/regen-cv.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
@@ -38,6 +39,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.19",
+    "tsx": "^4.20.5",
     "typescript": "^5"
   }
 }
