@@ -6,4 +6,4 @@ flow:
   terminal: [done, dropped]
 id:
   prefix: BL
-  next: 20
+  next: 21
