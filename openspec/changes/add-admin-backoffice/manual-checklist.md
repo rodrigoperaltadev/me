@@ -9,12 +9,12 @@
 
 ## Auth
 
-- [ ] `GET /admin` without cookie → redirect to `/admin/login`
-- [ ] Wrong password on login → generic error, no cookie set
-- [ ] Correct password → redirect to `/admin` dashboard
-- [ ] `POST /api/admin/logout` clears session; `/admin/*` blocked again
-- [ ] `/admin` HTML includes `noindex` robots meta
-- [ ] `/sitemap.xml` does not list `/admin` URLs
+- [x] `GET /admin` without cookie → redirect to `/admin/login`
+- [x] Wrong password on login → generic error, no cookie set
+- [x] Correct password → redirect to `/admin` dashboard
+- [x] `POST /api/admin/logout` clears session; `/admin/*` blocked again
+- [x] `/admin` HTML includes `noindex` robots meta
+- [x] `/sitemap.xml` does not list `/admin` URLs
 
 ## Public experience (pre-migration parity)
 
@@ -25,13 +25,13 @@
 
 ## Admin experience CRUD
 
-- [ ] `/admin/experience` lists all 8 entries by `order`
-- [ ] Create new entry with valid `id` (e.g. `007_TEST`) → file in `content/experience/`
-- [ ] Edit EN fields → `content/experience/{id}.json` updated
-- [ ] Edit ES overlay → `content/experience/{id}.es.json` created/updated
-- [ ] Delete entry → both `.json` and `.es.json` removed
-- [ ] Invalid `id` format → validation error, no file written
-- [ ] Duplicate `id` → 409 conflict
+- [x] `/admin/experience` lists all 8 entries by `order`
+- [x] Create new entry with valid `id` (e.g. `007_TEST`) → file in `content/experience/`
+- [x] Edit EN fields → `content/experience/{id}.json` updated
+- [x] Edit ES overlay → `content/experience/{id}.es.json` created/updated
+- [x] Delete entry → both `.json` and `.es.json` removed
+- [x] Invalid `id` format → validation error, no file written
+- [x] Duplicate `id` → 409 conflict
 
 ## Admin blog CRUD
 

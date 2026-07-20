@@ -85,11 +85,13 @@ Chain strategy: stacked-to-main
 - [x] 5.3 Wire regen into experience mutations
 - [x] 5.4 Update `CV.md` on experience save
 
-## Phase 6: Manual Verification (PENDING)
+## Phase 6: Manual Verification (COMPLETED)
 
-- [ ] 6.1 Test login/logout flow
-- [ ] 6.2 Test experience CRUD
-- [ ] 6.3 Test validation errors
-- [ ] 6.4 Test duplicate ID handling
-- [ ] 6.5 Verify noindex on admin pages
-- [ ] 6.6 Verify /admin not in sitemap
+- [x] 6.1 Test login/logout flow
+- [x] 6.2 Test experience CRUD
+- [x] 6.3 Test validation errors
+- [x] 6.4 Test duplicate ID handling
+- [x] 6.5 Verify noindex on admin pages
+- [x] 6.6 Verify /admin not in sitemap
+
+**Notes (2026-07-20):** Logout form left the browser on `/api/admin/logout` (JSON). Fixed with 303 redirect to `/admin/login`. Remaining checks verified manually OK.
