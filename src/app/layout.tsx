@@ -89,12 +89,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="view-transition" content="same-origin" />
+        {/* Apply persisted theme before paint to avoid dark FOUC on /experience/[id] etc. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.classList.add("light-theme");}else{document.documentElement.classList.remove("light-theme");}}catch(e){}})();`,
+          }}
+        />
       </head>
       <body
         className={`${spaceGrotesk.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable} antialiased`}
+        suppressHydrationWarning
       >
         <ViewTransitions>
           <AppProvider>{children}</AppProvider>

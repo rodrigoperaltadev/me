@@ -28,7 +28,8 @@
     --foreground: var(--color-text-primary);
   }
 
-  .light-theme {
+  .light-theme,
+  html.light-theme {
     --color-background: #F4F0EC;
     --color-surface: #E8E4DF;
     --color-surface-alt: #DEDAD4;
