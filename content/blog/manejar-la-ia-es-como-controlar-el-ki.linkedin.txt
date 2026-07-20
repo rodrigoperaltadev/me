@@ -1,0 +1,23 @@
+Cualquier persona de bien en su infancia soñó con convertirse en Súper Saiyajin y poder hacer cosas fuera de lo común.
+
+La llegada de la inteligencia artificial nos convirtió a todos en un SSJ. Elegir qué construir y con qué tecnologías hacerlo es tan directo como pedir volar y lanzar ráfagas de energía.
+
+Pero tirar energía sin control te va a dejar exhausto y sin resultados en producción.
+
+Memorizar la sintaxis de un lenguaje está al alcance de cualquiera. Declarar variables, tipar funciones o estructurar un bucle se resuelve en minutos con un LLM al lado. La sintaxis es barata.
+
+Lo verdaderamente difícil es la técnica de combate: la arquitectura y el entorno.
+
+Ahí lo tenés de ejemplo a Trunks canchereando con que era más fuerte que Cell. Ya sabemos cómo terminó eso cuando la teoría no se condice con la física del mundo real.
+
+Si usás la IA para migrar a un stack del cual no entendés los fundamentos, vas a subir a producción código que compila, pero que va a consumir la batería del usuario o va a congelar la interfaz con pérdidas de memoria invisibles. Y la IA no te va a salvar cuando eso falle, porque no vas a saber qué buscar ni qué prompt escribir.
+
+La IA no democratizó la arquitectura de software; democratizó la escritura de código.
+
+Los fundamentos son universales. Si entendés Clean Architecture, principios SOLID y patrones de diseño como el BFF, podés moverte entre stacks usando la IA como un amplificador de poder real y no como una muleta.
+
+La IA no va a reemplazar a los desarrolladores que piensan y diseñan soluciones estructuradas. Va a dejar de lado a los insectos que solo copian y pegan sin entender qué pasa por detrás.
+
+Una vez que domines tu ki, entonces puedes intentar lanzar el Kamehameha. Solo, no lo hagas en público.
+
+Escribí una reflexión completa sobre la técnica, el control del Ki y cómo usar la IA con criterio técnico en el blog. Te dejo el enlace a la nota completa en el primer comentario.

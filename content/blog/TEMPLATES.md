@@ -129,3 +129,20 @@ Este documento contiene las plantillas estructurales para cada formato de blog d
    - Desarrollo reflexivo de por qué las cosas son así y qué se está haciendo mal en la industria general.
 4. **Cierre / Debate**
    - Conclusión e invitación a los lectores a comentar o debatir en sus redes.
+
+---
+
+## 👔 Promoción en LinkedIn (.linkedin.txt)
+*Foco: Generar el post promocional del artículo para LinkedIn. Debe escribirse en formato de texto plano sin markdown, utilizando espacios y saltos de línea dobles para estructurar la lectura, y con total prohibición de emojis.*
+
+### Reglas estrictas:
+- **Formato**: Texto plano puro. Sin asteriscos (`**`), sin numerales de título (`#`), sin cursivas unicode.
+- **Emojis**: PROHIBIDOS. Cero emojis en todo el texto.
+- **Espaciado**: Doble salto de línea entre párrafos y puntos clave para airear la lectura.
+- **Flujo de aprobación**: El borrador se guarda en formato `.linkedin.txt` junto al artículo. NUNCA se publica automáticamente, requiere revisión y autorización expresa de Rodrigo.
+
+### Estructura:
+1. **El Gancho (Hook)**: Una o dos oraciones cortas y de alto impacto sobre el tema técnico o cultural del post.
+2. **El Problema / Dolor**: Párrafo breve describiendo el dolor real que el desarrollador o el negocio experimentan.
+3. **La Solución / Insights**: Párrafo con las ideas o aprendizajes clave desarrollados en el artículo.
+4. **Llamado a la Acción (CTA)**: El enlace al blog (con el slug correspondiente) invitando a leer el post completo.
