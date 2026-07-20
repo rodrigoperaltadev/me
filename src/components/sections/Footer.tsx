@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useApp } from "@/components/AppProvider";
+import { SITE_VERSION, BUILD_SHA, BUILD_DATE, CV_VERSION } from "@/lib/version";
 
 export function Footer() {
   const { dict } = useApp();
@@ -20,6 +21,9 @@ export function Footer() {
         </div>
         <div className="font-mono text-[10px] text-[var(--color-muted)] uppercase tracking-widest">
           {dict.footer.builtWith}
+          <div className="mt-1 opacity-80">
+            site v{SITE_VERSION} · @{BUILD_SHA} · {BUILD_DATE} · cv {CV_VERSION}
+          </div>
         </div>
       </div>
     </footer>
