@@ -6,6 +6,7 @@ import {
   type CvLang,
 } from "@/lib/cvContent";
 import { PrintButton } from "./PrintButton";
+import { LanguageToggle } from "./LanguageToggle";
 import {
   MailIcon,
   GlobeIcon,
@@ -50,6 +51,7 @@ export async function CVDocument({ lang }: { lang: CvLang }) {
 
   return (
     <main className="cv-root">
+      <LanguageToggle lang={lang} />
       <PrintButton />
 
       <article className="cv-sheet">

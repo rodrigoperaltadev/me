@@ -5,6 +5,8 @@ export const dictionary = {
       experience: "./experience",
       stack: "./stack",
       contact: "./contact",
+      menu: "Menu",
+      closeMenu: "Close menu",
     },
     hero: {
       subtitle: "Senior React & React Native Engineer",
@@ -54,6 +56,8 @@ export const dictionary = {
       experience: "./experiencia",
       stack: "./stack",
       contact: "./contacto",
+      menu: "Menú",
+      closeMenu: "Cerrar menú",
     },
     hero: {
       subtitle: "Senior React & React Native Engineer",
